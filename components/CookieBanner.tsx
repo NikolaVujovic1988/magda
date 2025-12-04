@@ -75,7 +75,7 @@ export default function CookieBanner() {
                 </div>
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                    Wir schätzen Ihre Privatsphäre! 🍪
+                    Wir schätzen Ihre Privatsphäre!
                   </h3>
                   <p className="text-gray-600 leading-relaxed">
                     Um Ihnen die <span className="font-semibold text-[#986AC6]">bestmögliche Erfahrung</span> zu bieten,
@@ -252,16 +252,16 @@ export default function CookieBanner() {
               {/* Save Buttons */}
               <div className="flex flex-col sm:flex-row gap-3">
                 <button
-                  onClick={handleSavePreferences}
+                  onClick={handleAcceptAll}
                   className="flex-1 bg-gradient-to-r from-[#986AC6] to-[#8357B8] text-white px-6 py-4 rounded-xl font-bold shadow-lg hover:shadow-xl transition-all duration-300"
                 >
-                  Auswahl speichern
+                  Alle akzeptieren
                 </button>
                 <button
-                  onClick={handleAcceptAll}
+                  onClick={handleSavePreferences}
                   className="flex-1 bg-white border-2 border-[#986AC6] text-[#986AC6] px-6 py-4 rounded-xl font-semibold hover:bg-[#986AC6] hover:text-white transition-all duration-300"
                 >
-                  Alle akzeptieren
+                  Auswahl speichern
                 </button>
               </div>
             </div>

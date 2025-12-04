@@ -16,9 +16,6 @@ export const metadata: Metadata = {
   title: "Magda Ambulante Pflege - Professionelle Pflegeleistungen in Remscheid",
   description: "Ambulanter Pflegedienst Magda GmbH bietet professionelle Pflege und Betreuung in Remscheid und Umgebung. Kompetent, herzlich und zuverlässig.",
   keywords: "Ambulante Pflege, Pflegedienst, Remscheid, Altenpflege, häusliche Pflege, Behandlungspflege, Grundpflege",
-  icons: {
-    icon: "/Magda-violet-transparent(1).png",
-  },
 };
 
 export default function RootLayout({

@@ -36,7 +36,7 @@ export default function Hero() {
         <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm border border-[#986AC6]/20 rounded-full px-6 py-3 mb-8 shadow-lg hover:shadow-xl transition-all duration-500 group">
           <Sparkles className="w-4 h-4 text-[#986AC6] group-hover:rotate-12 transition-transform duration-300" />
           <span className="text-sm font-medium text-[#986AC6]">
-            Die MDK-Prüfung mit 1 bestanden
+            Die MDK-Prüfung mit 1,3 bestanden
           </span>
           <Sparkles className="w-4 h-4 text-[#986AC6] group-hover:rotate-12 transition-transform duration-300" />
         </div>

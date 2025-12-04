@@ -10,7 +10,8 @@ export default function Services() {
         "Körperpflege & Hygiene",
         "An- und Auskleiden",
         "Mobilisation & Lagerung",
-        "Hilfe bei der Nahrungsaufnahme"
+        "Hilfe bei der Nahrungsaufnahme",
+        "Sondenernährung PEG",
       ]
     },
     {
@@ -21,7 +22,8 @@ export default function Services() {
         "Medikamentengabe & Injektionen",
         "Verbandswechsel",
         "Wundversorgung",
-        "Blutdruck- & Blutzuckermessung"
+        "Blutdruck- & Blutzuckermessung",
+        "Insulingabe",
       ]
     },
     // {
@@ -57,17 +59,17 @@ export default function Services() {
         "Zubereitung von Mahlzeiten"
       ]
     },
-    {
-      icon: <Heart className="w-10 h-10" />,
-      title: "Betreuungsleistungen §45b",
-      description: "Aktivierende Betreuung und soziale Teilhabe für mehr Lebensqualität im Alltag.",
-      features: [
-        "Gedächtnistraining",
-        "Spaziergänge & Ausflüge",
-        "Gespräche & Gesellschaft",
-        "Freizeitgestaltung"
-      ]
-    },
+    // {
+    //   icon: <Heart className="w-10 h-10" />,
+    //   title: "Betreuungsleistungen §45b",
+    //   description: "Aktivierende Betreuung und soziale Teilhabe für mehr Lebensqualität im Alltag.",
+    //   features: [
+    //     "Gedächtnistraining",
+    //     "Spaziergänge & Ausflüge",
+    //     "Gespräche & Gesellschaft",
+    //     "Freizeitgestaltung"
+    //   ]
+    // },
     // {
     //   icon: <Baby className="w-10 h-10" />,
     //   title: "Spezialisierte Pflege",
@@ -90,17 +92,17 @@ export default function Services() {
         "Wohnraumanpassung"
       ]
     },
-    {
-      icon: <ActivitySquare className="w-10 h-10" />,
-      title: "Kurzzeitpflege & Tagespflege",
-      description: "Temporäre Pflege und Betreuung zur Überbrückung oder Entlastung.",
-      features: [
-        "Nach Krankenhausaufenthalt",
-        "Übergangsweise Pflege",
-        "Tagesstruktur",
-        "Soziale Aktivitäten"
-      ]
-    }
+    // {
+    //   icon: <ActivitySquare className="w-10 h-10" />,
+    //   title: "Kurzzeitpflege",
+    //   description: "Temporäre Pflege und Betreuung zur Überbrückung oder Entlastung.",
+    //   features: [
+    //     "Nach Krankenhausaufenthalt",
+    //     "Übergangsweise Pflege",
+    //     "Tagesstruktur",
+    //     "Soziale Aktivitäten"
+    //   ]
+    // }
   ];
 
   return (
@@ -112,7 +114,7 @@ export default function Services() {
       <div className="absolute top-20 right-10 w-72 h-72 bg-[#986AC6]/5 rounded-full blur-3xl" />
       <div className="absolute bottom-20 left-10 w-96 h-96 bg-[#986AC6]/5 rounded-full blur-3xl" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+      <div className="relative z-10 max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-20">
           <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm border border-[#986AC6]/20 rounded-full px-6 py-3 mb-6">
@@ -134,7 +136,7 @@ export default function Services() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 mb-16">
           {services.map((service, index) => (
             <div
               key={index}

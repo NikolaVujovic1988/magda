@@ -3,6 +3,13 @@
 import { useState } from "react";
 import { Phone, Mail, MapPin, Clock, CheckCircle2, Send, Sparkles } from "lucide-react";
 
+// Facebook Pixel type declaration
+declare global {
+  interface Window {
+    fbq: (action: string, eventName: string, params?: object) => void;
+  }
+}
+
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
@@ -36,6 +43,14 @@ export default function Contact() {
 
       setIsSubmitted(true);
       setFormData({ name: "", email: "", phone: "", message: "" });
+
+      // Track Facebook Pixel Lead event (only if consent is given)
+      if (typeof window !== "undefined" && window.fbq) {
+        window.fbq("track", "Lead", {
+          content_name: "Contact Form Submission",
+          content_category: "Contact",
+        });
+      }
 
       setTimeout(() => {
         setIsSubmitted(false);
@@ -79,7 +94,7 @@ export default function Contact() {
     {
       icon: <Clock className="w-6 h-6" />,
       title: "Öffnungszeiten",
-      primary: "Mo - Fr: 08:00 - 18:00 Uhr",
+      primary: "Mo - Fr: 08:00 - 16:00 Uhr",
       secondary: "24/7 Notfall-Erreichbarkeit",
       href: null
     }

@@ -44,7 +44,7 @@ export default function Hero() {
         {/* Headline */}
         <header className="space-y-8 mb-12">
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold leading-[0.9] tracking-tight">
-            <span className="block text-gray-900 mb-2">Magda Ambulante Pflege -</span>
+            <span className="block text-gray-800 mb-2">Magda Ambulante Pflege -</span>
             <span className="block bg-gradient-to-r from-[#986AC6] via-[#B084D6] to-[#986AC6] bg-clip-text text-transparent animate-gradient-x">
               mit Vertrauen & Herz
             </span>
@@ -68,10 +68,10 @@ export default function Hero() {
             className="group relative bg-[#986AC6] text-white px-10 py-5 rounded-2xl font-semibold text-lg shadow-2xl hover:shadow-[#986AC6]/25 transition-all duration-500 transform hover:-translate-y-1 hover:scale-105 overflow-hidden"
           >
             <div className="absolute inset-0 bg-gradient-to-r from-[#8357B8] to-[#986AC6] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-            <div className="relative flex items-center gap-3">
+            <div className="relative flex justify-start items-center gap-3">
               <Phone className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
-              Beratungstermin vereinbaren
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+              Kostenlosen Erststenrmin vereinbaren
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300 hidden md:block" />
             </div>
           </a>
 

@@ -116,9 +116,9 @@ export default function Hero() {
         {/* Badges */}
         <div className="flex flex-wrap justify-center gap-4 mt-12 opacity-70">
           {[
-            "MDK Geprüft",
+            "MDK Note 1,2",
             "Pflegekassen Zugelassen",
-            "ISO Zertifiziert",
+            "5,0 ★ Google-Bewertungen ",
           ].map((badge, index) => (
             <div
               key={index}

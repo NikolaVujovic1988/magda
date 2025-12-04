@@ -1,9 +1,15 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import { Facebook, Instagram, Linkedin, Phone, Mail, MapPin } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+
+  const handleOpenCookieSettings = () => {
+    window.dispatchEvent(new Event("openCookieSettings"));
+  };
 
   return (
     <footer className="relative bg-gradient-to-br from-gray-900 to-gray-800 text-white overflow-hidden">
@@ -125,6 +131,12 @@ export default function Footer() {
                   <span className="w-1.5 h-1.5 bg-[#986AC6] rounded-full opacity-0 group-hover:opacity-100 transition-opacity" />
                   Datenschutz
                 </Link>
+              </li>
+              <li>
+                <button onClick={handleOpenCookieSettings} className="text-gray-300 hover:text-[#986AC6] transition-colors flex items-center gap-2 group">
+                  <span className="w-1.5 h-1.5 bg-[#986AC6] rounded-full opacity-0 group-hover:opacity-100 transition-opacity" />
+                  Cookie-Einstellungen
+                </button>
               </li>
               <li>
                 <Link href="/agb" className="text-gray-300 hover:text-[#986AC6] transition-colors flex items-center gap-2 group">

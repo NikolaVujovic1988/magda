@@ -21,6 +21,18 @@ export default function CookieBanner() {
       const timer = setTimeout(() => setShowBanner(true), 1000);
       return () => clearTimeout(timer);
     }
+
+    // Listen for manual open events
+    const handleOpenSettings = () => {
+      setShowBanner(true);
+      setShowSettings(true);
+    };
+
+    window.addEventListener("openCookieSettings", handleOpenSettings);
+
+    return () => {
+      window.removeEventListener("openCookieSettings", handleOpenSettings);
+    };
   }, []);
 
   const handleAcceptAll = () => {

@@ -11,15 +11,40 @@ export default function Contact() {
     message: ""
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    setIsSubmitted(true);
-    setTimeout(() => {
-      setIsSubmitted(false);
+    setIsLoading(true);
+    setError("");
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || "Fehler beim Senden der Nachricht");
+      }
+
+      setIsSubmitted(true);
       setFormData({ name: "", email: "", phone: "", message: "" });
-    }, 3000);
+
+      setTimeout(() => {
+        setIsSubmitted(false);
+      }, 5000);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Ein Fehler ist aufgetreten");
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -166,6 +191,11 @@ export default function Contact() {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
+                {error && (
+                  <div className="bg-red-50 border border-red-200 rounded-xl p-4">
+                    <p className="text-red-600 text-sm">{error}</p>
+                  </div>
+                )}
                 <div>
                   <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
                     Name *
@@ -231,9 +261,10 @@ export default function Contact() {
 
                 <button
                   type="submit"
-                  className="group w-full bg-gradient-to-r from-[#986AC6] to-[#8357B8] text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center gap-2"
+                  disabled={isLoading}
+                  className="group w-full bg-gradient-to-r from-[#986AC6] to-[#8357B8] text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0"
                 >
-                  Nachricht senden
+                  {isLoading ? "Wird gesendet..." : "Nachricht senden"}
                   <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
                 </button>
 

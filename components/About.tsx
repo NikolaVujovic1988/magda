@@ -15,7 +15,7 @@ export default function About() {
     {
       icon: <Award className="w-8 h-8" />,
       title: "Qualität",
-      description: "MDK-Note 1 und höchste Pflegestandards in allen Bereichen unserer Dienstleistungen."
+      description: "MDK-Note 1,3 und höchste Pflegestandards in allen Bereichen unserer Dienstleistungen."
     },
     {
       icon: <Users className="w-8 h-8" />,
@@ -26,7 +26,7 @@ export default function About() {
 
   const certifications = [
     "Von allen Pflegekassen zugelassen",
-    "MDK-Prüfung mit Note 1 bestanden",
+    "MDK-Prüfung mit Note 1,3 bestanden",
   ];
 
   return (
@@ -66,7 +66,7 @@ export default function About() {
                 Wir verstehen, dass jeder Mensch einzigartig ist und individuelle Bedürfnisse hat.
               </p>
               <p>
-                Mit der <span className="font-semibold text-[#986AC6]">MDK-Bestnote 1</span> und der Zulassung
+                Mit der <span className="font-semibold text-[#986AC6]">MDK-Note 1,3</span> und der Zulassung
                 aller Pflegekassen garantieren wir Ihnen höchste Pflegequalität. Ihre Zufriedenheit und
                 Ihr Wohlbefinden stehen für uns im Mittelpunkt – Tag für Tag, rund um die Uhr.
               </p>

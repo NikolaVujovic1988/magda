@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
 
-export default function Header() {
+export default function KarriereHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -28,27 +28,21 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="#home" className="text-gray-700 hover:text-[#986AC6] transition-colors font-medium">
-              Startseite
-            </Link>
-            <Link href="#leistungen" className="text-gray-700 hover:text-[#986AC6] transition-colors font-medium">
-              Leistungen
-            </Link>
-            <Link href="#ueber-uns" className="text-gray-700 hover:text-[#986AC6] transition-colors font-medium">
-              Über uns
-            </Link>
-            <Link href="/karriere" className="text-gray-700 hover:text-[#986AC6] transition-colors font-medium">
-              Karriere
-            </Link>
-            <Link href="#kontakt" className="text-gray-700 hover:text-[#986AC6] transition-colors font-medium">
-              Kontakt
-            </Link>
-            <Link
-              href="#kontakt"
+            <a href="#stellenausschreibung" className="text-gray-700 hover:text-[#986AC6] transition-colors font-medium">
+              Stellenausschreibung
+            </a>
+            <a href="#voraussetzungen" className="text-gray-700 hover:text-[#986AC6] transition-colors font-medium">
+              Voraussetzungen
+            </a>
+            <a href="#benefits" className="text-gray-700 hover:text-[#986AC6] transition-colors font-medium">
+              Vorteile
+            </a>
+            <a
+              href="#bewerbung"
               className="bg-[#986AC6] text-white px-6 py-2.5 rounded-full hover:bg-[#8357B8] transition-all duration-300 font-medium shadow-md hover:shadow-lg hover:-translate-y-0.5"
             >
-              Jetzt anfragen
-            </Link>
+              Jetzt bewerben
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -65,49 +59,34 @@ export default function Header() {
         {isMenuOpen && (
           <div className="md:hidden pb-4">
             <div className="flex flex-col space-y-4">
-              <Link
-                href="#home"
+              <a
+                href="#stellenausschreibung"
                 className="text-gray-700 hover:text-[#986AC6] transition-colors font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Startseite
-              </Link>
-              <Link
-                href="#leistungen"
+                Stellenausschreibung
+              </a>
+              <a
+                href="#voraussetzungen"
                 className="text-gray-700 hover:text-[#986AC6] transition-colors font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Leistungen
-              </Link>
-              <Link
-                href="#ueber-uns"
+                Voraussetzungen
+              </a>
+              <a
+                href="#benefits"
                 className="text-gray-700 hover:text-[#986AC6] transition-colors font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Über uns
-              </Link>
-              <Link
-                href="/karriere"
-                className="text-gray-700 hover:text-[#986AC6] transition-colors font-medium"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Karriere
-              </Link>
-
-              <Link
-                href="#kontakt"
-                className="text-gray-700 hover:text-[#986AC6] transition-colors font-medium"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Kontakt
-              </Link>
-              <Link
-                href="#kontakt"
+                Vorteile
+              </a>
+              <a
+                href="#bewerbung"
                 className="bg-[#986AC6] text-white px-6 py-2.5 rounded-full hover:bg-[#8357B8] transition-all duration-300 font-medium text-center shadow-md"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Jetzt anfragen
-              </Link>
+                Jetzt bewerben
+              </a>
             </div>
           </div>
         )}

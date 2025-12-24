@@ -1,15 +1,9 @@
-"use client";
-
 import Link from "next/link";
 import Image from "next/image";
-import { Facebook, Instagram, Linkedin, Phone, Mail, MapPin } from "lucide-react";
+import { Facebook, Instagram, Phone, Mail, MapPin } from "lucide-react";
 
-export default function Footer() {
+export default function KarriereFooter() {
   const currentYear = new Date().getFullYear();
-
-  const handleOpenCookieSettings = () => {
-    window.dispatchEvent(new Event("openCookieSettings"));
-  };
 
   return (
     <footer className="relative bg-gradient-to-br from-gray-900 to-gray-800 text-white overflow-hidden">
@@ -84,34 +78,34 @@ export default function Footer() {
             <h3 className="text-lg font-bold mb-6">Schnelllinks</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="#home" className="text-gray-300 hover:text-[#986AC6] transition-colors flex items-center gap-2 group">
+                <Link href="/" className="text-gray-300 hover:text-[#986AC6] transition-colors flex items-center gap-2 group">
                   <span className="w-1.5 h-1.5 bg-[#ffffff] rounded-full opacity-100 group-hover:opacity-100 group-hover:bg-[#986AC6] transition-opacity" />
                   Startseite
                 </Link>
               </li>
               <li>
-                <Link href="#leistungen" className="text-gray-300 hover:text-[#986AC6] transition-colors flex items-center gap-2 group">
+                <a href="#stellenausschreibung" className="text-gray-300 hover:text-[#986AC6] transition-colors flex items-center gap-2 group">
                   <span className="w-1.5 h-1.5 bg-[#ffffff] rounded-full opacity-100 group-hover:opacity-100 group-hover:bg-[#986AC6] transition-opacity" />
-                  Leistungen
-                </Link>
+                  Stellenausschreibung
+                </a>
               </li>
               <li>
-                <Link href="#ueber-uns" className="text-gray-300 hover:text-[#986AC6] transition-colors flex items-center gap-2 group">
+                <a href="#voraussetzungen" className="text-gray-300 hover:text-[#986AC6] transition-colors flex items-center gap-2 group">
                   <span className="w-1.5 h-1.5 bg-[#ffffff] rounded-full opacity-100 group-hover:opacity-100 group-hover:bg-[#986AC6] transition-opacity" />
-                  Über uns
-                </Link>
+                  Voraussetzungen
+                </a>
               </li>
               <li>
-                <Link href="/karriere" className="text-gray-300 hover:text-[#986AC6] transition-colors flex items-center gap-2 group">
+                <a href="#benefits" className="text-gray-300 hover:text-[#986AC6] transition-colors flex items-center gap-2 group">
                   <span className="w-1.5 h-1.5 bg-[#ffffff] rounded-full opacity-100 group-hover:opacity-100 group-hover:bg-[#986AC6] transition-opacity" />
-                  Karriere
-                </Link>
+                  Vorteile
+                </a>
               </li>
               <li>
-                <Link href="#kontakt" className="text-gray-300 hover:text-[#986AC6] transition-colors flex items-center gap-2 group">
+                <a href="#bewerbung" className="text-gray-300 hover:text-[#986AC6] transition-colors flex items-center gap-2 group">
                   <span className="w-1.5 h-1.5 bg-[#ffffff] rounded-full opacity-100 group-hover:opacity-100 group-hover:bg-[#986AC6] transition-opacity" />
-                  Kontakt
-                </Link>
+                  Bewerbung
+                </a>
               </li>
             </ul>
           </div>
@@ -131,12 +125,6 @@ export default function Footer() {
                   <span className="w-1.5 h-1.5 bg-[#ffffff] rounded-full opacity-100 group-hover:opacity-100 group-hover:bg-[#986AC6] transition-opacity" />
                   Datenschutz
                 </Link>
-              </li>
-              <li>
-                <button onClick={handleOpenCookieSettings} className="text-gray-300 hover:text-[#986AC6] transition-colors flex items-center gap-2 group">
-                  <span className="w-1.5 h-1.5 bg-[#ffffff] rounded-full opacity-100 group-hover:opacity-100 group-hover:bg-[#986AC6] transition-opacity" />
-                  Cookie-Einstellungen
-                </button>
               </li>
               <li>
                 <Link href="/agb" className="text-gray-300 hover:text-[#986AC6] transition-colors flex items-center gap-2 group">

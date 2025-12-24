@@ -108,12 +108,12 @@ const Application = () => {
                 </a>
 
                 <a href="mailto:info@ambulanter-pflegedienst-magda.de" className="group flex items-start gap-4 transition-all duration-300">
-                  <div className="w-14 h-14 bg-gradient-to-br from-[#986AC6] to-[#B084D6] rounded-xl flex items-center justify-center shadow-md group-hover:rotate-6 transition-transform duration-300">
+                  <div className="w-14 h-14 bg-gradient-to-br from-[#986AC6] to-[#B084D6] rounded-xl flex items-center justify-center shadow-md group-hover:rotate-6 transition-transform duration-300 flex-shrink-0">
                     <Mail className="w-6 h-6 text-white" />
                   </div>
-                  <div>
+                  <div className="min-w-0">
                     <p className="text-sm text-gray-600 mb-1">E-Mail</p>
-                    <p className="font-bold text-gray-900 break-all">info@ambulanter-pflegedienst-magda.de</p>
+                    <p className="font-bold text-gray-900 text-lg break-all">info@ambulanter-pflegedienst-magda.de</p>
                   </div>
                 </a>
 
@@ -142,17 +142,17 @@ const Application = () => {
             <div className="bg-white/60 backdrop-blur-sm border border-[#986AC6]/20 p-10 rounded-3xl shadow-lg">
               <h3 className="text-xl font-bold text-gray-900 mb-6">Bewerbungsprozess</h3>
               <div className="space-y-4">
-                <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 bg-gradient-to-br from-[#986AC6] to-[#B084D6] text-white rounded-xl flex items-center justify-center text-lg font-bold shadow-md">1</div>
-                  <span className="text-gray-700 font-medium">Online-Bewerbung oder Anruf</span>
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-gradient-to-br from-[#986AC6] to-[#B084D6] text-white rounded-xl flex items-center justify-center text-lg font-bold shadow-md flex-shrink-0">1</div>
+                  <span className="text-gray-700 font-medium pt-1">Online-Bewerbung oder Anruf</span>
                 </div>
-                <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 bg-gradient-to-br from-[#986AC6] to-[#B084D6] text-white rounded-xl flex items-center justify-center text-lg font-bold shadow-md">2</div>
-                  <span className="text-gray-700 font-medium">Persönliches Gespräch</span>
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-gradient-to-br from-[#986AC6] to-[#B084D6] text-white rounded-xl flex items-center justify-center text-lg font-bold shadow-md flex-shrink-0">2</div>
+                  <span className="text-gray-700 font-medium pt-1">Persönliches Gespräch</span>
                 </div>
-                <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 bg-gradient-to-br from-[#986AC6] to-[#B084D6] text-white rounded-xl flex items-center justify-center text-lg font-bold shadow-md">3</div>
-                  <span className="text-gray-700 font-medium">Schnellstmöglicher Einstieg</span>
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-gradient-to-br from-[#986AC6] to-[#B084D6] text-white rounded-xl flex items-center justify-center text-lg font-bold shadow-md flex-shrink-0">3</div>
+                  <span className="text-gray-700 font-medium pt-1">Schnellstmöglicher Einstieg</span>
                 </div>
               </div>
             </div>

@@ -14,7 +14,7 @@ const KarriereHero = () => {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 max-w-6xl mx-auto px-6 sm:px-8 lg:px-12 py-20">
+      <div className="relative z-10 max-w-6xl mx-auto px-6 sm:px-8 lg:px-12 md:py-20 py-32">
         <div className="text-center">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm border border-[#986AC6]/20 rounded-full px-6 py-3 mb-8 shadow-lg">

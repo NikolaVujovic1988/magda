@@ -69,7 +69,7 @@ const Requirements = () => {
         </div>
 
         <div className="bg-white/60 backdrop-blur-sm border border-[#986AC6]/20 rounded-3xl shadow-2xl p-10 md:p-12">
-          <h3 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+          <h3 className="md:text-3xl text-2xl font-bold text-gray-900 mb-8 text-center">
             Wünschenswerte Zusatzqualifikationen
           </h3>
           <div className="grid md:grid-cols-2 gap-6">

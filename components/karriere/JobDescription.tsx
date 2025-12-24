@@ -75,7 +75,7 @@ const JobDescription = () => {
                                     </div>
                                     Arbeitszeiten
                                 </h4>
-                                <div className="grid grid-cols-2 gap-4">
+                                <div className="grid md:grid-cols-2 gap-4">
                                     <div className="bg-gradient-to-br from-[#F9F7FC] to-white p-6 rounded-xl border border-[#986AC6]/20">
                                         <h5 className="font-bold text-gray-900 mb-3 text-lg">Vollzeit</h5>
                                         <p className="text-gray-600">35 Stunden/Woche</p>
@@ -205,7 +205,7 @@ const JobDescription = () => {
                                     </div>
                                     Arbeitszeiten
                                 </h4>
-                                <div className="grid grid-cols-2 gap-4">
+                                <div className="grid md:grid-cols-2 gap-4">
                                     <div className="bg-gradient-to-br from-[#F9F7FC] to-white p-6 rounded-xl border border-[#986AC6]/20">
                                         <h5 className="font-bold text-gray-900 mb-3 text-lg">Vollzeit</h5>
                                         <p className="text-gray-600">35 Stunden/Woche</p>

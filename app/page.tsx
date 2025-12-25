@@ -5,6 +5,7 @@ import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import MagdaFaq from "@/components/faq";
+import MagdaReviewsSlider from "@/components/google-slider";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Hero />
       <Services />
       <About />
+      <MagdaReviewsSlider />
       <Contact />
       <MagdaFaq />
       <Footer />

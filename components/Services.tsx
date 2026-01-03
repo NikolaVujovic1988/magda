@@ -83,7 +83,7 @@ export default function Services() {
     // },
     {
       icon: <Pill className="w-10 h-10" />,
-      title: "Pflegeberatung",
+      title: "Pflegeberatung nach § 37 Abs. 3 SGB XI",
       description: "Kompetente Beratung zu allen Fragen rund um Pflege, Leistungen und Hilfsmittel.",
       features: [
         "Pflegegradermittlung",

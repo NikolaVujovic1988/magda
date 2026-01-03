@@ -65,22 +65,23 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row justify-center gap-6 mb-16">
           <a
             href="#kontakt"
-            className="group relative bg-[#986AC6] text-white px-10 py-5 rounded-2xl font-semibold text-lg shadow-2xl hover:shadow-[#986AC6]/25 transition-all duration-500 transform hover:-translate-y-1 hover:scale-105 overflow-hidden"
+            className="group relative bg-[#986AC6] text-white px-6 sm:px-10 py-4 sm:py-5 rounded-2xl font-semibold text-base sm:text-lg shadow-2xl hover:shadow-[#986AC6]/25 transition-all duration-500 transform hover:-translate-y-1 hover:scale-105 overflow-hidden"
           >
             <div className="absolute inset-0 bg-gradient-to-r from-[#8357B8] to-[#986AC6] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-            <div className="relative flex justify-start items-center gap-3">
-              <Phone className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
-              Kostenlosen Erststenrmin vereinbaren
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300 hidden md:block" />
+            <div className="relative flex justify-center items-center gap-2 sm:gap-3 whitespace-nowrap">
+              <Phone className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300 flex-shrink-0" />
+              <span className="hidden sm:inline">Kostenlosen Beratungstermin sichern</span>
+              <span className="sm:hidden">Kostenlosen Beratungstermin sichern</span>
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300 hidden md:block flex-shrink-0" />
             </div>
           </a>
 
           <a
             href="#leistungen"
-            className="group border-2 border-[#986AC6] text-[#986AC6] bg-white/80 backdrop-blur-sm px-10 py-5 rounded-2xl font-semibold text-lg hover:bg-[#F3ECFA] hover:border-[#8357B8] transition-all duration-500 transform hover:-translate-y-1 shadow-lg hover:shadow-xl"
+            className="group border-2 border-[#986AC6] text-[#986AC6] bg-white/80 backdrop-blur-sm px-6 sm:px-10 py-4 sm:py-5 rounded-2xl font-semibold text-base sm:text-lg hover:bg-[#F3ECFA] hover:border-[#8357B8] transition-all duration-500 transform hover:-translate-y-1 shadow-lg hover:shadow-xl"
           >
-            <div className="flex items-center gap-3">
-              <Heart className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
+            <div className="flex items-center justify-center gap-2 sm:gap-3 whitespace-nowrap">
+              <Heart className="w-5 h-5 group-hover:scale-110 transition-transform duration-300 flex-shrink-0" />
               Unsere Leistungen
             </div>
           </a>

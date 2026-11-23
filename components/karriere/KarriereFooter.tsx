@@ -142,6 +142,23 @@ export default function KarriereFooter() {
             <p>
               © {currentYear} Magda Ambulante Pflege GmbH. Alle Rechte vorbehalten.
             </p>
+            {/* Agentur-Hinweis, gleiches Muster wie auf den anderen ASR-Digital-Kundenseiten */}
+            <p>
+              Designed with{" "}
+              <span aria-hidden="true" className="text-[#986AC6]">
+                &#9829;
+              </span>{" "}
+              in NRW by{" "}
+              <a
+                href="https://asrdigital.de"
+                target="_blank"
+                rel="noopener"
+                title="ASR Digital, Digitalagentur aus Wuppertal"
+                className="whitespace-nowrap underline-offset-4 transition-colors hover:text-[#986AC6] hover:underline"
+              >
+                ASR Digital
+              </a>
+            </p>
             <p className="flex items-center gap-2">
               <span>Remscheid</span>
               <span>•</span>
